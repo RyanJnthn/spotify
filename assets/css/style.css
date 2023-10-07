@@ -276,3 +276,19 @@ body{
     border-radius: 40px;
     cursor: pointer;
 }
+/* Media query saat layar diperkecil menjadi 768px atau lebih kecil */
+@media screen and (max-width: 768px) {
+    .main-container .spotify-playlist .list{
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        /* Ubah lebar minimum dan warna latar belakang di sini */
+        background: linear-gradient(to bottom, #00ff00, #000000);
+    }
+}
+/* Media query saat layar diperkecil menjadi 480px atau lebih kecil */
+@media screen and (max-width: 480px) {
+    .main-container .spotify-playlist .list{
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        /* Ubah lebar minimum dan warna latar belakang di sini */
+        background: linear-gradient(to bottom, #ae2896, #509bf5);
+    }
+}
